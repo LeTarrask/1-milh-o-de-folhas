@@ -8,7 +8,7 @@
 
 import Foundation
 
-// TODO: create poem generator engine
+// MARK: create poem generator engine
 
 let openers = ["A água evapora na pele ardente", "O sangue das veias do sábio vem do Primeiro Rio e flui para o Oceano da Existência.", "A brisa sopra a montanha, o furacão sopra a montanha", "O monge que serve à pequena deusa é idolatrado e suas palavras serão escutadas por muitos séculos.", "A beira do lago, molhada, é lago ou chão?", "É hora de esquecer e seguir", "Contemplar o por-do-sol é entender a necessidade do escuro.", "O olhar fulgurante da beleza acabada.", "O vento percorre as maiores distâncias e entra nas menores frestas.", "Todos os grãos da montanha alcançam o céu.", "A bailarina alcança o céu por mérito próprio", "Evaporar é buscar os nutrientes do céu.", "Para a água, o alto da montanha é o limite", "É tentador evitar a luta.", "A montanha acalma a outra montanha,", "O ódio do raio não dura", "Os ventos levam e trazem o que não estiver amarrado.", "Quanto mais alto, mais lento o vento", "O verão nasce no inverno", "Ao redor do círculo, todos são irmãos", "Devagar, dois abrem os portões que conteriam um exército.", "Com pressa, não é possível descer uma montanha.", "O sábio foge para a montanha para atrair o mundo.", "O passado da montanha é a pedra.", "É preciso ser incêndio", "As lágrimas da montanha", "Quando a nuvem está grávida,", "O autor invisível", "As ondas se rompem na praia", "O guerreiro-trovão vence", "Se receita para conquistar houvesse,", "Todo inimigo são dois", "A deusa do universo se entrega", "O fogo não teme nem a solidão", "A diferença complementa", "Os esforços extremos", "Eu quero o que eu tenho, ou eu tenho o que quero?", "Todo desejo age", "O céu nos observa", "Do amor que plantas", "O artista descobriu", "Dentro de mim, um inimigo", "Toda a sabedoria do mundo reunida,", "Na face calma se esconde a emoção,", "A marcha é a velocidade da água,", "Trovão no lago", "Alimento oferecido", "Um cortejo fúnebre", "Dentro está a resposta", "O conquistador da montanha", "Andar altivo", "Manchas de tinta", "Céu e abismo,", "Jovem virgem e velho sábio", "Juntos explodimos", "O silêncio", "Faíscas no peito", "Trombetas de luz", "Há mais força no rendido que no derrotado", "A fogueira é o centro da sala.", "Tive medo de descer", "Amor se aprende", "A pureza do gosto de sangue", "O covarde é absoluto", "Quem guarda o segredo,", "Nenhuma espera é infinita.", "A minha máscara", "Cores do crepúsculo", "Mestre forte, discípulo fraco.", "Os opostos criam."]
 
@@ -16,26 +16,23 @@ let middlers = ["Opostos incompatíveis se destroem", "Com a selvagem paz de ent
 
 let closers = ["Recomeçam juntos para ir mais longe", "Um milênio se conta em segundos.", "A força que não resiste é mais forte.", "Meditar é assistir a explosões internas.", "Meu mundo é a união do meu ser com o universo", "E a Terra fica.", "E enquanto isso, marchamos.", "É preciso buscar eternamente o fim para não encontrá-lo.", "Pequenas palavras e grandes ventos erguem montanhas.", "Para a nuvem, a beleza está no chão.", "Farfalhando música", "Nenhum obstáculo quebra o ciclo.", "Maquiagem de vapor.", "Não pode fugir das suas escolhas.", "Recebe-se o que se cede.", "Grãos de areia se empilham no infinito.", "No céu, há estrelas.", "Cresça com ordem.", "Morrer é não plantar.", "Calor e brilho nos olhos.", "O mais lento evolui mais rápido.", "Calma obstinada.", "Por baixo da serenidade se encontra a fera.", "Esquecimento não é justiça.", "Madeira que cupim não rói.", "Que ilumina as cavernas da alma.", "Tornado e orvalho.", "Enfocando segredos.", "Em infinitos grãos de areia.", "Júbilo momentâneo.", "Nunca entregaria de graça.", "Só o inocente não vê.", "Na ponta da língua.", "É o canibal da natureza.", "Tartaruga em cima da árvore.", "Amanhecerá.", "Do que quando vê a realidade.", "Ao redor da Lua.", "E tudo que é bom.", "A energia.", "Equilibrado no ar.", "O rei da esperança.", "Qual é o seu livro preferido?", "Um golpe fatal. Como escolher prioridades?", "Pressa controlada.", "Silêncio.", "Veneno que vem de dentro.", "Renascimento.", "Doce.", "Vermelho.", "Para aquecer-te.", "Dicionário.", "Humildade.", "Exceto o futuro.", "E vi que era bom.", "Incompleto.", "Como trovões.", "Entrega-se para vencer.", "Quando levanta os olhos, tudo é progresso.", "Esperança de incêndio.", "Quem perde, perde três vezes.", "Só nos cobre a memória.", "Irresistível.", "E um olhar de abandono.", "Muda.", "E o mundo muda.", "da minha alma.", "Sabedoria.", "Discípulo forte, mestre sábio.", "Nada somos."]
 
-struct poem {
+struct Poem {
     var start: String
     var middle: String
-    var end: String
-    
+    var leEnd: String
+
     init() {
         start = openers[Int(arc4random_uniform(UInt32(openers.count)))]
         middle = middlers[Int(arc4random_uniform(UInt32(middlers.count)))]
-        end = closers[Int(arc4random_uniform(UInt32(closers.count)))]
+        leEnd = closers[Int(arc4random_uniform(UInt32(closers.count)))]
     }
-    
+
     func fullPoem() -> String {
-        return "\(start) \n\(middle) \n\(end)"
+        return "\(start) \n\(middle) \n\(leEnd)"
     }
 }
 
 func randomPoem() {
-    let text = poem()
+    let text = Poem()
     print(text.fullPoem())
 }
-
-
-

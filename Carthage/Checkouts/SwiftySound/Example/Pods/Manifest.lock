@@ -1,0 +1,16 @@
+PODS:
+  - SwiftySound (1.0.0)
+
+DEPENDENCIES:
+  - SwiftySound (from `..`)
+
+EXTERNAL SOURCES:
+  SwiftySound:
+    :path: ..
+
+SPEC CHECKSUMS:
+  SwiftySound: d86667284ceee5d1d66eb9495b636bf29030da46
+
+PODFILE CHECKSUM: 730fcb00540b9971d8d7967761264eabd805d3d0
+
+COCOAPODS: 1.4.0

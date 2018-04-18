@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.0.0",
+  "iOS" : [
+    {
+      "name" : "SwiftySound",
+      "hash" : "e1b2790f4920a368cc832b3d91d9a40188051cb833ffbac95d4e5cff80ca0265"
+    }
+  ]
+}

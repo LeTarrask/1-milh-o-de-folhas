@@ -7,42 +7,45 @@
 //
 
 import UIKit
+import AVFoundation
+import SwiftySound
 
 class MainViewController: UIViewController {
-    
-    @IBOutlet weak var openLine: UILabel!
-    
-    @IBOutlet weak var middleLine: UILabel!
-    
-    @IBOutlet weak var closingLine: UILabel!
-    
+
+    @IBOutlet weak var openLine: SpringLabel!
+
+    @IBOutlet weak var middleLine: SpringLabel!
+
+    @IBOutlet weak var closingLine: SpringLabel!
+
     @IBAction func randomButton(_ sender: Any) {
-        cleanPoems()
         button.fadeOut()
-        fillLines()
-        showPoems()
-        
+        cleanPoems()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.fillLines()
+            self.showPoems()
+        }
     }
-    
+
     @IBOutlet weak var button: UIButton!
-    
+
     var poemCounter = 0
-    
+
     @IBOutlet weak var backgroundImage: UIImageView!
-    
+
     func fillLines() {
-        let newPoem = poem()
+        let newPoem = Poem()
         openLine.text = newPoem.start
         middleLine.text = newPoem.middle
-        closingLine.text = newPoem.end
+        closingLine.text = newPoem.leEnd
     }
-    
+
     func cleanPoems() {
         openLine.fadeOut()
         middleLine.fadeOut()
         closingLine.fadeOut()
     }
-    
+
     func changeBackground() {
         let diceRoll = Int(arc4random_uniform(47))
         let photoName = "photo" + String(diceRoll+1) + ".JPG"
@@ -73,21 +76,20 @@ class MainViewController: UIViewController {
             self.button.fadeIn()
             self.poemCounter += 1
         }
-        
+
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         changeBackground()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.button.fadeIn()
         }
+        Sound.play(file: "antti_luode_5aminasia", fileExtension: "mp3", numberOfLoops: -1)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-
 }
-
