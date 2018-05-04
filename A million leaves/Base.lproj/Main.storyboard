@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jJ1-r3-kcN">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,23 +10,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Bobagens-Regular.otf">
-            <string>Bobagens-Regular</string>
+        <array key="Amatic-Bold.ttf">
+            <string>Amatic-Bold</string>
         </array>
     </customFonts>
     <scenes>
         <!--Loading View Controller-->
         <scene sceneID="77I-8w-cG4">
             <objects>
-                <viewController id="jJ1-r3-kcN" customClass="LoadingViewController" customModule="A_million_leaves" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jJ1-r3-kcN" customClass="LoadingViewController" customModule="Um_milha_o_de_folhas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bul-5u-Jsi">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="um milhão de folhas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYy-0k-NMB" customClass="SpringLabel" customModule="A_million_leaves" customModuleProvider="target">
-                                <rect key="frame" x="185" y="46" width="297" height="52"/>
-                                <fontDescription key="fontDescription" name="Bobagens-Regular" family="Bobagens" pointSize="48"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 milhão de folhas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYy-0k-NMB" customClass="SpringLabel" customModule="Um_milha_o_de_folhas" customModuleProvider="target">
+                                <rect key="frame" x="95" y="360.5" width="130" height="103.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="5Q5-HB-7pN"/>
+                                    <constraint firstAttribute="width" constant="130" id="BaN-Ea-6o1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="48"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.98431372549999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
@@ -42,10 +46,17 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeInSine"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="um projeto wabisabi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lng-VA-Gau" customClass="SpringLabel" customModule="A_million_leaves" customModuleProvider="target">
-                                <rect key="frame" x="260" y="112" width="147" height="26"/>
-                                <fontDescription key="fontDescription" name="Bobagens-Regular" family="Bobagens" pointSize="24"/>
-                                <nil key="textColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animacaopassaro-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="0p1-Gt-SMs">
+                                <rect key="frame" x="100" y="224" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="6Bk-uz-VE9"/>
+                                    <constraint firstAttribute="width" constant="120" id="UWC-wb-k8g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="um projeto wabisabi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lng-VA-Gau" customClass="SpringLabel" customModule="Um_milha_o_de_folhas" customModuleProvider="target">
+                                <rect key="frame" x="100" y="504" width="121" height="26"/>
+                                <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="24"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.98431372549999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
@@ -61,10 +72,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="feito por tarrask" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGP-xM-qI3" customClass="SpringLabel" customModule="A_million_leaves" customModuleProvider="target">
-                                <rect key="frame" x="287" y="261" width="92" height="19"/>
-                                <fontDescription key="fontDescription" name="Bobagens-Regular" family="Bobagens" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="feito por tarrask" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGP-xM-qI3" customClass="SpringLabel" customModule="Um_milha_o_de_folhas" customModuleProvider="target">
+                                <rect key="frame" x="124.5" y="537.5" width="71" height="19"/>
+                                <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="17"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.98431372549999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animation" value="squeezeRight"/>
@@ -81,20 +92,24 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZYy-0k-NMB" firstAttribute="centerX" secondItem="Bul-5u-Jsi" secondAttribute="centerX" id="839-vl-uin"/>
-                            <constraint firstItem="Lng-VA-Gau" firstAttribute="centerX" secondItem="ZYy-0k-NMB" secondAttribute="centerX" id="CBp-j8-a7n"/>
-                            <constraint firstItem="ZYy-0k-NMB" firstAttribute="top" secondItem="lug-TP-HRb" secondAttribute="top" constant="46" id="Iid-L5-50u"/>
-                            <constraint firstItem="Lng-VA-Gau" firstAttribute="top" secondItem="ZYy-0k-NMB" secondAttribute="bottom" constant="14" id="MrS-2Q-iiK"/>
-                            <constraint firstItem="NGP-xM-qI3" firstAttribute="top" secondItem="Lng-VA-Gau" secondAttribute="bottom" constant="123" id="WHN-5J-Ust"/>
-                            <constraint firstItem="Lng-VA-Gau" firstAttribute="centerX" secondItem="Bul-5u-Jsi" secondAttribute="centerX" id="gBu-d2-Wbh"/>
-                            <constraint firstItem="NGP-xM-qI3" firstAttribute="centerX" secondItem="Bul-5u-Jsi" secondAttribute="centerX" id="kNU-eq-3s4"/>
-                            <constraint firstItem="NGP-xM-qI3" firstAttribute="centerX" secondItem="ZYy-0k-NMB" secondAttribute="centerX" id="pp7-Ul-Rzl"/>
+                            <constraint firstItem="Lng-VA-Gau" firstAttribute="centerX" secondItem="ZYy-0k-NMB" secondAttribute="centerX" id="3os-bm-uro"/>
+                            <constraint firstItem="ZYy-0k-NMB" firstAttribute="top" secondItem="0p1-Gt-SMs" secondAttribute="bottom" constant="16.5" id="8ma-8m-pZ7"/>
+                            <constraint firstItem="ZYy-0k-NMB" firstAttribute="top" secondItem="0p1-Gt-SMs" secondAttribute="bottom" constant="16.5" id="ITG-BD-yKt"/>
+                            <constraint firstItem="0p1-Gt-SMs" firstAttribute="centerY" secondItem="Bul-5u-Jsi" secondAttribute="centerY" id="OIN-of-MNt"/>
+                            <constraint firstItem="NGP-xM-qI3" firstAttribute="centerX" secondItem="Bul-5u-Jsi" secondAttribute="centerX" id="U9G-Ao-dtU"/>
+                            <constraint firstItem="0p1-Gt-SMs" firstAttribute="centerX" secondItem="Bul-5u-Jsi" secondAttribute="centerX" id="Y3P-Cq-278"/>
+                            <constraint firstItem="NGP-xM-qI3" firstAttribute="centerX" secondItem="ZYy-0k-NMB" secondAttribute="centerX" id="Zn2-vr-cmM"/>
+                            <constraint firstItem="NGP-xM-qI3" firstAttribute="top" secondItem="Lng-VA-Gau" secondAttribute="bottom" constant="8" id="cFu-4u-BPA"/>
+                            <constraint firstItem="Lng-VA-Gau" firstAttribute="centerX" secondItem="Bul-5u-Jsi" secondAttribute="centerX" id="vyS-xE-Erq"/>
+                            <constraint firstItem="ZYy-0k-NMB" firstAttribute="centerX" secondItem="Bul-5u-Jsi" secondAttribute="centerX" id="xMy-9L-XGw"/>
+                            <constraint firstItem="Lng-VA-Gau" firstAttribute="top" secondItem="ZYy-0k-NMB" secondAttribute="bottom" constant="40" id="xXZ-xJ-DLM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lug-TP-HRb"/>
                     </view>
                     <connections>
+                        <outlet property="animatedLogo" destination="0p1-Gt-SMs" id="aDe-Zy-Wnh"/>
                         <outlet property="author" destination="NGP-xM-qI3" id="HLL-SO-hF9"/>
                         <outlet property="subtitle" destination="Lng-VA-Gau" id="x90-VE-uJv"/>
                         <outlet property="titleHeadline" destination="ZYy-0k-NMB" id="W7b-9Z-Tbm"/>
@@ -103,43 +118,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rtq-GR-maT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117" y="-785"/>
+            <point key="canvasLocation" x="116" y="-785.75712143928047"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="MainViewController" customModule="A_million_leaves" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="MainViewController" customModule="Um_milha_o_de_folhas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo1.JPG" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Shg-Cb-oEj">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWR-dT-zxj" customClass="SpringLabel" customModule="A_million_leaves" customModuleProvider="target">
-                                <rect key="frame" x="20" y="40" width="627" height="39"/>
-                                <fontDescription key="fontDescription" name="Bobagens-Regular" family="Bobagens" pointSize="36"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="dWR-dT-zxj" customClass="SpringLabel" customModule="Um_milha_o_de_folhas" customModuleProvider="target">
+                                <rect key="frame" x="20" y="60" width="280" height="39"/>
+                                <color key="backgroundColor" red="0.32156862745098036" green="0.78823529411764703" blue="0.63137254901960782" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.32156862745098036" green="0.78823529411764703" blue="0.63137254901960782" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="36"/>
+                                <color key="textColor" red="0.99180288230000002" green="1" blue="0.95801296879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVi-uc-YXf" customClass="SpringLabel" customModule="A_million_leaves" customModuleProvider="target">
-                                <rect key="frame" x="20" y="119" width="627" height="39"/>
-                                <fontDescription key="fontDescription" name="Bobagens-Regular" family="Bobagens" pointSize="36"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="lVi-uc-YXf" customClass="SpringLabel" customModule="Um_milha_o_de_folhas" customModuleProvider="target">
+                                <rect key="frame" x="20" y="129" width="280" height="39"/>
+                                <color key="backgroundColor" red="0.32156862745098036" green="0.78823529411764703" blue="0.63137254901960782" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.32156862745098036" green="0.78823529411764703" blue="0.63137254901960782" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="36"/>
+                                <color key="textColor" red="0.99180288230000002" green="1" blue="0.95801296879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2t-vU-ab5" customClass="SpringLabel" customModule="A_million_leaves" customModuleProvider="target">
-                                <rect key="frame" x="20" y="198" width="627" height="39"/>
-                                <fontDescription key="fontDescription" name="Bobagens-Regular" family="Bobagens" pointSize="36"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="M2t-vU-ab5" customClass="SpringLabel" customModule="Um_milha_o_de_folhas" customModuleProvider="target">
+                                <rect key="frame" x="20" y="198" width="280" height="39"/>
+                                <color key="backgroundColor" red="0.32156862745098036" green="0.78823529411764703" blue="0.63137254901960782" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.32156862745098036" green="0.78823529411764703" blue="0.63137254901960782" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="36"/>
+                                <color key="textColor" red="0.99180288230000002" green="1" blue="0.95801296879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X4-Aa-muy">
-                                <rect key="frame" x="239.5" y="317" width="188" height="64"/>
-                                <fontDescription key="fontDescription" name="Bobagens-Regular" family="Bobagens" pointSize="48"/>
-                                <state key="normal" title="random poem"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X4-Aa-muy">
+                                <rect key="frame" x="98.5" y="374" width="123" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="JTI-6z-t1U"/>
+                                    <constraint firstAttribute="width" constant="123" id="WiF-uE-aNp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="24"/>
+                                <state key="normal" title="poema aleatório">
+                                    <color key="titleColor" red="0.32156862745098036" green="0.78823529411764703" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="randomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xym-hK-8e4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animacaopassaro-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="wCW-QK-oHK">
+                                <rect key="frame" x="100" y="374" width="120" height="128"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.78823529410000004" blue="0.63137254899999995" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="84j-tQ-sbl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="Z8h-3R-isj"/>
+                                    <constraint firstAttribute="width" constant="120" id="ZcX-fl-oNJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbN-qI-LXd">
+                                <rect key="frame" x="268" y="522" width="36" height="31"/>
+                                <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="17"/>
+                                <state key="normal" title="Créditos">
+                                    <color key="titleColor" red="0.35686274509999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0yH-wd-TjW" kind="presentation" modalTransitionStyle="coverVertical" id="Taj-dh-6SU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -149,14 +195,18 @@
                             <constraint firstItem="dWR-dT-zxj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="HAf-Mr-bEU"/>
                             <constraint firstAttribute="bottom" secondItem="Shg-Cb-oEj" secondAttribute="bottom" id="Jjq-ly-2hl"/>
                             <constraint firstItem="Shg-Cb-oEj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q74-8I-EYW"/>
-                            <constraint firstItem="lVi-uc-YXf" firstAttribute="top" secondItem="dWR-dT-zxj" secondAttribute="bottom" constant="40" id="Rt6-4p-znU"/>
+                            <constraint firstItem="lVi-uc-YXf" firstAttribute="top" secondItem="dWR-dT-zxj" secondAttribute="bottom" constant="30" id="Rt6-4p-znU"/>
                             <constraint firstItem="dWR-dT-zxj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UfR-vR-MjA"/>
                             <constraint firstItem="Shg-Cb-oEj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W6A-gG-BbB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dWR-dT-zxj" secondAttribute="trailing" constant="20" id="Wet-m0-bOT"/>
                             <constraint firstItem="5X4-Aa-muy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YXy-re-uej"/>
-                            <constraint firstItem="M2t-vU-ab5" firstAttribute="top" secondItem="lVi-uc-YXf" secondAttribute="bottom" constant="40" id="bdL-3p-fq0"/>
-                            <constraint firstItem="5X4-Aa-muy" firstAttribute="top" secondItem="M2t-vU-ab5" secondAttribute="bottom" constant="80" id="fGc-sx-LOf"/>
+                            <constraint firstItem="M2t-vU-ab5" firstAttribute="top" secondItem="lVi-uc-YXf" secondAttribute="bottom" constant="30" id="bdL-3p-fq0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cbN-qI-LXd" secondAttribute="bottom" constant="15" id="fBn-GZ-auI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wCW-QK-oHK" secondAttribute="bottom" constant="66" id="iXd-4w-nLS"/>
                             <constraint firstItem="Shg-Cb-oEj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="idE-f4-6E7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5X4-Aa-muy" secondAttribute="bottom" constant="20" id="l7K-0u-0XK"/>
+                            <constraint firstItem="wCW-QK-oHK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mOJ-Pu-q9m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cbN-qI-LXd" secondAttribute="trailing" constant="16" id="nOR-Ve-Uxg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lVi-uc-YXf" secondAttribute="trailing" constant="20" id="o1X-vJ-C24"/>
                             <constraint firstItem="M2t-vU-ab5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="okC-yg-EFN"/>
                             <constraint firstItem="lVi-uc-YXf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zvP-92-Ghm"/>
@@ -164,6 +214,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="animatedLogo" destination="wCW-QK-oHK" id="YUM-rR-Wuu"/>
                         <outlet property="backgroundImage" destination="Shg-Cb-oEj" id="6Ge-ud-fIH"/>
                         <outlet property="button" destination="5X4-Aa-muy" id="UT6-X7-Kkh"/>
                         <outlet property="closingLine" destination="M2t-vU-ab5" id="tVv-4D-Vpk"/>
@@ -173,10 +224,86 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115.59220389805098" y="-42.399999999999999"/>
+            <point key="canvasLocation" x="114.40000000000001" y="-42.728635682158924"/>
+        </scene>
+        <!--Credits View Controller-->
+        <scene sceneID="6ev-p5-hh5">
+            <objects>
+                <viewController id="0yH-wd-TjW" customClass="CreditsViewController" customModule="Um_milha_o_de_folhas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qfm-gM-oeI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RO2-XN-Vd0">
+                                <rect key="frame" x="16" y="20" width="30" height="31"/>
+                                <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="17"/>
+                                <state key="normal" title="voltar">
+                                    <color key="titleColor" red="0.35686274509999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="yMu-L4-F0b"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 milhão de folhas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGv-8C-40M">
+                                <rect key="frame" x="124" y="74" width="72" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="PNg-In-G5y"/>
+                                    <constraint firstAttribute="width" constant="72" id="T2l-ez-coe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="30"/>
+                                <color key="textColor" red="0.35686274509999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sLZ-2S-BFp">
+                                <rect key="frame" x="16" y="160" width="288" height="388"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">1 milhão de folhas é parte de um projeto criativo de Alex Luna chamado wabi-sabi. Os poemas deste app são gerados a partir da combinação aleatória dos haikus de um livro de meditações chamado Segredos.
+(link) 
+
+A programação em Swift também foi feita por Alex Luna.
+www.tarrask.com/1milhaodefolhas
+
+A direção de arte, o logo e o carinho com as imagens são obras de Cris Santos.
+www.cristinasantos.eu
+
+A música se chama "5 am in Asia" e foi composta pelo artista finlandês Antii Luode.
+https://soundcloud.com/antti-luode
+
+Algumas animações utilizam a biblioteca Spring, de MengTo.
+https://github.com/MengTo/Spring</mutableString>
+                                <color key="textColor" red="0.35686274509999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sLZ-2S-BFp" firstAttribute="leading" secondItem="XFD-sM-TLF" secondAttribute="leading" constant="16" id="AI3-8D-pU2"/>
+                            <constraint firstItem="FGv-8C-40M" firstAttribute="top" secondItem="XFD-sM-TLF" secondAttribute="top" constant="54" id="GHU-yO-6eQ"/>
+                            <constraint firstItem="XFD-sM-TLF" firstAttribute="bottom" secondItem="sLZ-2S-BFp" secondAttribute="bottom" constant="20" id="Hns-1q-QaR"/>
+                            <constraint firstItem="FGv-8C-40M" firstAttribute="centerX" secondItem="qfm-gM-oeI" secondAttribute="centerX" id="Qeo-zn-hcY"/>
+                            <constraint firstItem="XFD-sM-TLF" firstAttribute="trailing" secondItem="sLZ-2S-BFp" secondAttribute="trailing" constant="16" id="Zwk-Oy-LhC"/>
+                            <constraint firstItem="RO2-XN-Vd0" firstAttribute="top" secondItem="XFD-sM-TLF" secondAttribute="top" id="aGq-x3-mhT"/>
+                            <constraint firstItem="RO2-XN-Vd0" firstAttribute="leading" secondItem="XFD-sM-TLF" secondAttribute="leading" constant="16" id="bAz-JZ-dc4"/>
+                            <constraint firstItem="sLZ-2S-BFp" firstAttribute="top" secondItem="FGv-8C-40M" secondAttribute="bottom" constant="16" id="q0V-fj-opt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XFD-sM-TLF"/>
+                    </view>
+                    <connections>
+                        <outlet property="TextView" destination="sLZ-2S-BFp" id="Dg4-IR-jSX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5Q-qh-xtG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114" y="-43"/>
         </scene>
     </scenes>
     <resources>
+        <image name="animacaopassaro-01.png" width="1024" height="1024"/>
         <image name="photo1.JPG" width="1000" height="666"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yMu-L4-F0b"/>
+    </inferredMetricsTieBreakers>
 </document>

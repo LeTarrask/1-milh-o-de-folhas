@@ -16,18 +16,47 @@ class LoadingViewController: UIViewController {
 
     @IBOutlet weak var author: SpringLabel!
 
+    @IBOutlet weak var animatedLogo: UIImageView!
+    
+    var imageListArray: [UIImage] = [
+        UIImage(named: "animacaopassaro-01.png")!,
+        UIImage(named: "animacaopassaro-02.png")!,
+        UIImage(named: "animacaopassaro-03.png")!,
+        UIImage(named: "animacaopassaro-04.png")!
+    ]
+
+ 
+    func animateLogo() {
+        animatedLogo.animationImages = imageListArray
+        animatedLogo.animationDuration = 0.8
+        animatedLogo.startAnimating()
+    }
+    
+    func setGradientBackground() {
+        let colorTop =  #colorLiteral(red: 0.3215686275, green: 0.7882352941, blue: 0.631372549, alpha: 1).cgColor
+        let colorBottom = #colorLiteral(red: 0.1607843137, green: 0.6705882353, blue: 0.8862745098, alpha: 1).cgColor
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorTop, colorBottom]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = self.view.bounds
+        
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        setGradientBackground()
+        animateLogo()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             self.titleHeadline.fadeIn()
             self.titleHeadline.animate()
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.subtitle.fadeIn()
             self.subtitle.animate()
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             self.author.fadeIn()
             self.author.animate()
         }

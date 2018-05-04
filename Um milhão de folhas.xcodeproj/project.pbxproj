@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		79191DFF2087517300BA8DDC /* antti_luode_5aminasia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 79191DFE2087517300BA8DDC /* antti_luode_5aminasia.mp3 */; };
-		793FB9AC2086087700121E5B /* stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 793FB97A2086087700121E5B /* stroke.png */; };
+		79257A122097567100B23C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79257A112097567100B23C8D /* Assets.xcassets */; };
+		79257A1620975B0300B23C8D /* AmaticSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79257A1420975B0200B23C8D /* AmaticSC-Regular.ttf */; };
+		79257A1720975B0300B23C8D /* Amatic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79257A1520975B0300B23C8D /* Amatic-Bold.ttf */; };
+		79257A1D20975F6600B23C8D /* animacaopassaro-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 79257A1920975F6500B23C8D /* animacaopassaro-01.png */; };
+		79257A1E20975F6600B23C8D /* animacaopassaro-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 79257A1A20975F6500B23C8D /* animacaopassaro-02.png */; };
+		79257A1F20975F6600B23C8D /* animacaopassaro-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 79257A1B20975F6500B23C8D /* animacaopassaro-03.png */; };
+		79257A2020975F6600B23C8D /* animacaopassaro-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 79257A1C20975F6500B23C8D /* animacaopassaro-04.png */; };
 		793FB9AD2086087700121E5B /* photo48.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 793FB97C2086087700121E5B /* photo48.JPG */; };
 		793FB9AE2086087700121E5B /* photo8.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 793FB97D2086087700121E5B /* photo8.JPG */; };
 		793FB9AF2086087800121E5B /* photo9.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 793FB97E2086087700121E5B /* photo9.JPG */; };
@@ -57,7 +63,6 @@
 		793FB9DA2086087800121E5B /* photo44.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 793FB9A92086087700121E5B /* photo44.JPG */; };
 		793FB9DB2086087800121E5B /* photo1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 793FB9AA2086087700121E5B /* photo1.JPG */; };
 		793FB9DC2086087800121E5B /* photo45.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 793FB9AB2086087700121E5B /* photo45.JPG */; };
-		794D4E962084EE6600BAEBB6 /* Bobagens-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 794D4E952084EE6600BAEBB6 /* Bobagens-Regular.otf */; };
 		794D4E982084F18800BAEBB6 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D4E972084F18800BAEBB6 /* UIViewExtensions.swift */; };
 		7964BA18208501DF00D86487 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7964BA17208501DF00D86487 /* LoadingViewController.swift */; };
 		79715877208757AA00032B2C /* SwiftySound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79715876208757AA00032B2C /* SwiftySound.framework */; };
@@ -93,14 +98,20 @@
 		79B93319207F98C0005114B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B93318207F98C0005114B1 /* AppDelegate.swift */; };
 		79B9331B207F98C0005114B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9331A207F98C0005114B1 /* MainViewController.swift */; };
 		79B9331E207F98C0005114B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B9331C207F98C0005114B1 /* Main.storyboard */; };
-		79B93320207F98C0005114B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B9331F207F98C0005114B1 /* Assets.xcassets */; };
 		79B93323207F98C0005114B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B93321207F98C0005114B1 /* LaunchScreen.storyboard */; };
 		79B9332B207F98D6005114B1 /* LeaveMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9332A207F98D6005114B1 /* LeaveMachine.swift */; };
+		79FA3E74209CAB58006C0A2F /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FA3E73209CAB58006C0A2F /* CreditsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79191DFE2087517300BA8DDC /* antti_luode_5aminasia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = antti_luode_5aminasia.mp3; sourceTree = "<group>"; };
-		793FB97A2086087700121E5B /* stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stroke.png; sourceTree = "<group>"; };
+		79257A112097567100B23C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79257A1420975B0200B23C8D /* AmaticSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmaticSC-Regular.ttf"; sourceTree = "<group>"; };
+		79257A1520975B0300B23C8D /* Amatic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Amatic-Bold.ttf"; sourceTree = "<group>"; };
+		79257A1920975F6500B23C8D /* animacaopassaro-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animacaopassaro-01.png"; sourceTree = "<group>"; };
+		79257A1A20975F6500B23C8D /* animacaopassaro-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animacaopassaro-02.png"; sourceTree = "<group>"; };
+		79257A1B20975F6500B23C8D /* animacaopassaro-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animacaopassaro-03.png"; sourceTree = "<group>"; };
+		79257A1C20975F6500B23C8D /* animacaopassaro-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animacaopassaro-04.png"; sourceTree = "<group>"; };
 		793FB97C2086087700121E5B /* photo48.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo48.JPG; sourceTree = "<group>"; };
 		793FB97D2086087700121E5B /* photo8.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo8.JPG; sourceTree = "<group>"; };
 		793FB97E2086087700121E5B /* photo9.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo9.JPG; sourceTree = "<group>"; };
@@ -149,7 +160,6 @@
 		793FB9A92086087700121E5B /* photo44.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo44.JPG; sourceTree = "<group>"; };
 		793FB9AA2086087700121E5B /* photo1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1.JPG; sourceTree = "<group>"; };
 		793FB9AB2086087700121E5B /* photo45.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo45.JPG; sourceTree = "<group>"; };
-		794D4E952084EE6600BAEBB6 /* Bobagens-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bobagens-Regular.otf"; sourceTree = "<group>"; };
 		794D4E972084F18800BAEBB6 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		7964BA17208501DF00D86487 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		79715876208757AA00032B2C /* SwiftySound.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftySound.framework; path = Carthage/Build/iOS/SwiftySound.framework; sourceTree = "<group>"; };
@@ -183,14 +193,14 @@
 		7971589620875ED300032B2C /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7971589720875ED300032B2C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7971589820875ED300032B2C /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
-		79B93315207F98C0005114B1 /* A million leaves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A million leaves.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B93315207F98C0005114B1 /* Um milhão de folhas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Um milhão de folhas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B93318207F98C0005114B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79B9331A207F98C0005114B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		79B9331D207F98C0005114B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		79B9331F207F98C0005114B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79B93322207F98C0005114B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79B93324207F98C0005114B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79B9332A207F98D6005114B1 /* LeaveMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveMachine.swift; sourceTree = "<group>"; };
+		79FA3E73209CAB58006C0A2F /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,11 +215,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79257A1320975AEF00B23C8D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				79257A1520975B0300B23C8D /* Amatic-Bold.ttf */,
+				79257A1420975B0200B23C8D /* AmaticSC-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		79257A1820975F6500B23C8D /* animacao */ = {
+			isa = PBXGroup;
+			children = (
+				79257A1920975F6500B23C8D /* animacaopassaro-01.png */,
+				79257A1A20975F6500B23C8D /* animacaopassaro-02.png */,
+				79257A1B20975F6500B23C8D /* animacaopassaro-03.png */,
+				79257A1C20975F6500B23C8D /* animacaopassaro-04.png */,
+			);
+			path = animacao;
+			sourceTree = "<group>";
+		};
 		793FB9792086087700121E5B /* graphic_assets */ = {
 			isa = PBXGroup;
 			children = (
+				79257A1820975F6500B23C8D /* animacao */,
 				79191DFE2087517300BA8DDC /* antti_luode_5aminasia.mp3 */,
-				793FB97A2086087700121E5B /* stroke.png */,
 				793FB97B2086087700121E5B /* IMG */,
 			);
 			path = graphic_assets;
@@ -327,7 +357,7 @@
 		79B93316207F98C0005114B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79B93315207F98C0005114B1 /* A million leaves.app */,
+				79B93315207F98C0005114B1 /* Um milhão de folhas.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -335,17 +365,18 @@
 		79B93317207F98C0005114B1 /* A million leaves */ = {
 			isa = PBXGroup;
 			children = (
+				79257A1320975AEF00B23C8D /* fonts */,
 				793FB9792086087700121E5B /* graphic_assets */,
-				794D4E952084EE6600BAEBB6 /* Bobagens-Regular.otf */,
 				79B93318207F98C0005114B1 /* AppDelegate.swift */,
 				79B9331A207F98C0005114B1 /* MainViewController.swift */,
 				7964BA17208501DF00D86487 /* LoadingViewController.swift */,
 				794D4E972084F18800BAEBB6 /* UIViewExtensions.swift */,
 				79B9331C207F98C0005114B1 /* Main.storyboard */,
+				79FA3E73209CAB58006C0A2F /* CreditsViewController.swift */,
 				79B9332A207F98D6005114B1 /* LeaveMachine.swift */,
-				79B9331F207F98C0005114B1 /* Assets.xcassets */,
 				79B93321207F98C0005114B1 /* LaunchScreen.storyboard */,
 				79B93324207F98C0005114B1 /* Info.plist */,
+				79257A112097567100B23C8D /* Assets.xcassets */,
 				7971587A20875ED200032B2C /* Spring */,
 			);
 			path = "A million leaves";
@@ -354,9 +385,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79B93314207F98C0005114B1 /* A million leaves */ = {
+		79B93314207F98C0005114B1 /* Um milhão de folhas */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79B93327207F98C0005114B1 /* Build configuration list for PBXNativeTarget "A million leaves" */;
+			buildConfigurationList = 79B93327207F98C0005114B1 /* Build configuration list for PBXNativeTarget "Um milhão de folhas" */;
 			buildPhases = (
 				79B93311207F98C0005114B1 /* Sources */,
 				79B93312207F98C0005114B1 /* Frameworks */,
@@ -367,9 +398,9 @@
 			);
 			dependencies = (
 			);
-			name = "A million leaves";
+			name = "Um milhão de folhas";
 			productName = "A million leaves";
-			productReference = 79B93315207F98C0005114B1 /* A million leaves.app */;
+			productReference = 79B93315207F98C0005114B1 /* Um milhão de folhas.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -388,7 +419,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 79B93310207F98C0005114B1 /* Build configuration list for PBXProject "A million leaves" */;
+			buildConfigurationList = 79B93310207F98C0005114B1 /* Build configuration list for PBXProject "Um milhão de folhas" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -401,7 +432,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79B93314207F98C0005114B1 /* A million leaves */,
+				79B93314207F98C0005114B1 /* Um milhão de folhas */,
 			);
 		};
 /* End PBXProject section */
@@ -411,12 +442,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79257A2020975F6600B23C8D /* animacaopassaro-04.png in Resources */,
 				793FB9DA2086087800121E5B /* photo44.JPG in Resources */,
 				793FB9C52086087800121E5B /* photo24.JPG in Resources */,
 				793FB9BC2086087800121E5B /* photo22.JPG in Resources */,
+				79257A1D20975F6600B23C8D /* animacaopassaro-01.png in Resources */,
 				793FB9B72086087800121E5B /* photo39.JPG in Resources */,
 				793FB9CC2086087800121E5B /* photo32.JPG in Resources */,
 				793FB9C82086087800121E5B /* photo25.JPG in Resources */,
+				79257A1F20975F6600B23C8D /* animacaopassaro-03.png in Resources */,
 				793FB9D52086087800121E5B /* photo43.JPG in Resources */,
 				793FB9B62086087800121E5B /* photo11.JPG in Resources */,
 				793FB9B02086087800121E5B /* photo17.JPG in Resources */,
@@ -424,10 +458,13 @@
 				793FB9D62086087800121E5B /* photo47.JPG in Resources */,
 				793FB9B92086087800121E5B /* photo10.JPG in Resources */,
 				793FB9BE2086087800121E5B /* photo37.JPG in Resources */,
+				79257A1E20975F6600B23C8D /* animacaopassaro-02.png in Resources */,
 				79191DFF2087517300BA8DDC /* antti_luode_5aminasia.mp3 in Resources */,
 				793FB9D02086087800121E5B /* photo5.JPG in Resources */,
 				793FB9BA2086087800121E5B /* photo12.JPG in Resources */,
+				79257A1720975B0300B23C8D /* Amatic-Bold.ttf in Resources */,
 				793FB9C32086087800121E5B /* photo34.JPG in Resources */,
+				79257A1620975B0300B23C8D /* AmaticSC-Regular.ttf in Resources */,
 				793FB9D82086087800121E5B /* photo3.JPG in Resources */,
 				793FB9C02086087800121E5B /* photo35.JPG in Resources */,
 				793FB9C42086087800121E5B /* photo30.JPG in Resources */,
@@ -447,7 +484,6 @@
 				793FB9BB2086087800121E5B /* photo13.JPG in Resources */,
 				793FB9CB2086087800121E5B /* photo33.JPG in Resources */,
 				793FB9D12086087800121E5B /* photo40.JPG in Resources */,
-				79B93320207F98C0005114B1 /* Assets.xcassets in Resources */,
 				793FB9B42086087800121E5B /* photo15.JPG in Resources */,
 				793FB9B12086087800121E5B /* photo16.JPG in Resources */,
 				793FB9B52086087800121E5B /* photo29.JPG in Resources */,
@@ -458,14 +494,13 @@
 				793FB9BD2086087800121E5B /* photo36.JPG in Resources */,
 				793FB9C12086087800121E5B /* photo21.JPG in Resources */,
 				79B9331E207F98C0005114B1 /* Main.storyboard in Resources */,
+				79257A122097567100B23C8D /* Assets.xcassets in Resources */,
 				793FB9B22086087800121E5B /* photo28.JPG in Resources */,
 				797158B420875ED300032B2C /* Info.plist in Resources */,
 				793FB9C92086087800121E5B /* photo31.JPG in Resources */,
 				793FB9D32086087800121E5B /* photo7.JPG in Resources */,
 				793FB9B32086087800121E5B /* photo14.JPG in Resources */,
-				793FB9AC2086087700121E5B /* stroke.png in Resources */,
 				793FB9C22086087800121E5B /* photo20.JPG in Resources */,
-				794D4E962084EE6600BAEBB6 /* Bobagens-Regular.otf in Resources */,
 				793FB9B82086087800121E5B /* photo38.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +554,7 @@
 				797158B120875ED300032B2C /* SpringAnimation.swift in Sources */,
 				794D4E982084F18800BAEBB6 /* UIViewExtensions.swift in Sources */,
 				797158A320875ED300032B2C /* DesignableTextField.swift in Sources */,
+				79FA3E74209CAB58006C0A2F /* CreditsViewController.swift in Sources */,
 				797158A520875ED300032B2C /* SpringTextView.swift in Sources */,
 				7971589E20875ED300032B2C /* Spring.swift in Sources */,
 				797158A420875ED300032B2C /* SpringButton.swift in Sources */,
@@ -703,7 +739,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79B93310207F98C0005114B1 /* Build configuration list for PBXProject "A million leaves" */ = {
+		79B93310207F98C0005114B1 /* Build configuration list for PBXProject "Um milhão de folhas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79B93325207F98C0005114B1 /* Debug */,
@@ -712,7 +748,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79B93327207F98C0005114B1 /* Build configuration list for PBXNativeTarget "A million leaves" */ = {
+		79B93327207F98C0005114B1 /* Build configuration list for PBXNativeTarget "Um milhão de folhas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79B93328207F98C0005114B1 /* Debug */,

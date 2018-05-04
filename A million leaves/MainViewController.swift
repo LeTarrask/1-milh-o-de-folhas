@@ -18,7 +18,23 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var closingLine: SpringLabel!
 
+    @IBOutlet weak var animatedLogo: UIImageView!
+    
+    var imageListArray: [UIImage] = [
+        UIImage(named: "animacaopassaro-01.png")!,
+        UIImage(named: "animacaopassaro-02.png")!,
+        UIImage(named: "animacaopassaro-03.png")!,
+        UIImage(named: "animacaopassaro-04.png")!
+    ]
+    
+    func animateLogo() {
+        animatedLogo.animationImages = imageListArray
+        animatedLogo.animationDuration = 0.8
+        animatedLogo.startAnimating()
+    }
+    
     @IBAction func randomButton(_ sender: Any) {
+        animateLogo()
         button.fadeOut()
         cleanPoems()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
@@ -61,19 +77,17 @@ class MainViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.changeBackground()
             self.openLine.fadeIn()
-            self.openLine.backgroundColor = UIColor(patternImage: UIImage(named: "stroke.png")!)
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
             self.middleLine.fadeIn()
-            self.middleLine.backgroundColor = UIColor(patternImage: UIImage(named: "stroke.png")!)
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 6.0) {
             self.closingLine.fadeIn()
-            self.closingLine.backgroundColor = UIColor(patternImage: UIImage(named: "stroke.png")!)
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 15.0) {
             self.cleanPoems()
             self.button.fadeIn()
+            self.animatedLogo.stopAnimating()
             self.poemCounter += 1
         }
 
@@ -84,6 +98,7 @@ class MainViewController: UIViewController {
         changeBackground()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.button.fadeIn()
+            self.animatedLogo.fadeIn()
         }
         Sound.play(file: "antti_luode_5aminasia", fileExtension: "mp3", numberOfLoops: -1)
     }
