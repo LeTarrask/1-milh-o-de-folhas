@@ -38,7 +38,8 @@ class LoadingViewController: UIViewController {
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [colorTop, colorBottom]
-        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.startPoint = CGPoint(x: 1.0, y: 0.2)
+        gradientLayer.endPoint = CGPoint(x: 0.0, y: 1.0)
         gradientLayer.frame = self.view.bounds
         
         self.view.layer.insertSublayer(gradientLayer, at: 0)
@@ -47,7 +48,26 @@ class LoadingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setGradientBackground()
-        animateLogo()
+        
+        var folhas = [String]()
+        for n in 1...20 {
+            let name = "folha\(n).png"
+            folhas.append(name)
+        }
+        
+        for _ in 1...30 {
+            let imageName = folhas[Int(arc4random_uniform(UInt32(folhas.count)))]
+            let image = UIImage(named: imageName)
+            let imageView = UIImageView(image: image!)
+            imageView.contentMode = .scaleAspectFit
+            
+            imageView.frame = CGRect(x: Int(arc4random_uniform(UInt32(self.view.bounds.maxX))), y: Int(self.view.bounds.minY-100), width: 100, height: 100)
+            view.addSubview(imageView)
+            
+            imageView.leafFall()
+        }
+        
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             self.titleHeadline.fadeIn()
             self.titleHeadline.animate()
@@ -59,6 +79,9 @@ class LoadingViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             self.author.fadeIn()
             self.author.animate()
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
+            self.animateLogo()
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 15.0) {
             self.performSegue(withIdentifier: "segue", sender: self)

@@ -65,7 +65,6 @@ class MainViewController: UIViewController {
     func changeBackground() {
         let diceRoll = Int(arc4random_uniform(47))
         let photoName = "photo" + String(diceRoll+1) + ".JPG"
-        print(photoName)
         UIView.transition(with: backgroundImage,
                           duration: 1.8,
                           options: .transitionCrossDissolve,
@@ -80,14 +79,17 @@ class MainViewController: UIViewController {
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
             self.middleLine.fadeIn()
+            self.animatedLogo.stopAnimating()
+            self.animatedLogo.fadeOut()
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 6.0) {
             self.closingLine.fadeIn()
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 15.0) {
             self.cleanPoems()
+            self.animatedLogo.fadeIn()
             self.button.fadeIn()
-            self.animatedLogo.stopAnimating()
+           
             self.poemCounter += 1
         }
 
@@ -96,7 +98,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         changeBackground()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             self.button.fadeIn()
             self.animatedLogo.fadeIn()
         }

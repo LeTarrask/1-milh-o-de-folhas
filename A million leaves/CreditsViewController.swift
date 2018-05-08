@@ -14,24 +14,7 @@ class CreditsViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-//        // Setting the attributes
-//        let linkAttributes = [
-//            NSAttributedStringKey.link: URL(string: "http://www.tarrask.com")!,
-//            NSAttributedStringKey.font: UIFont(name: "Helvetica", size: 18.0)!,
-//            NSAttributedStringKey.foregroundColor: UIColor.blue
-//            ] as [NSAttributedStringKey : Any]
-//
-//        let attributedString = NSMutableAttributedString(string: "Alex Luna")
-//
-//        // Set the 'click here' substring to be the link
-//        attributedString.setAttributes(linkAttributes, range: NSMakeRange(0, 9))
-//
-//        self.textView.delegate = self
-//        self.textView.attributedText = attributedString
-        
-        
+        super.viewDidLoad()     
     }
     
     

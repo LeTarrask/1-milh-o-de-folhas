@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jJ1-r3-kcN">
-    <device id="retina4_0" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,11 +20,11 @@
             <objects>
                 <viewController id="jJ1-r3-kcN" customClass="LoadingViewController" customModule="Um_milha_o_de_folhas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bul-5u-Jsi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 milhão de folhas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYy-0k-NMB" customClass="SpringLabel" customModule="Um_milha_o_de_folhas" customModuleProvider="target">
-                                <rect key="frame" x="95" y="360.5" width="130" height="103.5"/>
+                                <rect key="frame" x="447" y="759.5" width="130" height="103.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="5Q5-HB-7pN"/>
                                     <constraint firstAttribute="width" constant="130" id="BaN-Ea-6o1"/>
@@ -47,14 +47,14 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animacaopassaro-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="0p1-Gt-SMs">
-                                <rect key="frame" x="100" y="224" width="120" height="120"/>
+                                <rect key="frame" x="452" y="623" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="6Bk-uz-VE9"/>
                                     <constraint firstAttribute="width" constant="120" id="UWC-wb-k8g"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="um projeto wabisabi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lng-VA-Gau" customClass="SpringLabel" customModule="Um_milha_o_de_folhas" customModuleProvider="target">
-                                <rect key="frame" x="100" y="504" width="121" height="26"/>
+                                <rect key="frame" x="451.5" y="903" width="121" height="26"/>
                                 <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="24"/>
                                 <color key="textColor" red="0.98431372549999996" green="0.98431372549999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -73,7 +73,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="feito por tarrask" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGP-xM-qI3" customClass="SpringLabel" customModule="Um_milha_o_de_folhas" customModuleProvider="target">
-                                <rect key="frame" x="124.5" y="537.5" width="71" height="19"/>
+                                <rect key="frame" x="477" y="936.5" width="70.5" height="18.5"/>
                                 <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="17"/>
                                 <color key="textColor" red="0.98431372549999996" green="0.98431372549999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -96,7 +96,6 @@
                         <constraints>
                             <constraint firstItem="Lng-VA-Gau" firstAttribute="centerX" secondItem="ZYy-0k-NMB" secondAttribute="centerX" id="3os-bm-uro"/>
                             <constraint firstItem="ZYy-0k-NMB" firstAttribute="top" secondItem="0p1-Gt-SMs" secondAttribute="bottom" constant="16.5" id="8ma-8m-pZ7"/>
-                            <constraint firstItem="ZYy-0k-NMB" firstAttribute="top" secondItem="0p1-Gt-SMs" secondAttribute="bottom" constant="16.5" id="ITG-BD-yKt"/>
                             <constraint firstItem="0p1-Gt-SMs" firstAttribute="centerY" secondItem="Bul-5u-Jsi" secondAttribute="centerY" id="OIN-of-MNt"/>
                             <constraint firstItem="NGP-xM-qI3" firstAttribute="centerX" secondItem="Bul-5u-Jsi" secondAttribute="centerX" id="U9G-Ao-dtU"/>
                             <constraint firstItem="0p1-Gt-SMs" firstAttribute="centerX" secondItem="Bul-5u-Jsi" secondAttribute="centerX" id="Y3P-Cq-278"/>
@@ -125,14 +124,14 @@
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="MainViewController" customModule="Um_milha_o_de_folhas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo1.JPG" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Shg-Cb-oEj">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="20" width="1024" height="1346"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="dWR-dT-zxj" customClass="SpringLabel" customModule="Um_milha_o_de_folhas" customModuleProvider="target">
-                                <rect key="frame" x="20" y="60" width="280" height="39"/>
+                                <rect key="frame" x="20" y="60" width="984" height="39"/>
                                 <color key="backgroundColor" red="0.32156862745098036" green="0.78823529411764703" blue="0.63137254901960782" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.32156862745098036" green="0.78823529411764703" blue="0.63137254901960782" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="36"/>
@@ -140,7 +139,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="lVi-uc-YXf" customClass="SpringLabel" customModule="Um_milha_o_de_folhas" customModuleProvider="target">
-                                <rect key="frame" x="20" y="129" width="280" height="39"/>
+                                <rect key="frame" x="20" y="129" width="984" height="39"/>
                                 <color key="backgroundColor" red="0.32156862745098036" green="0.78823529411764703" blue="0.63137254901960782" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.32156862745098036" green="0.78823529411764703" blue="0.63137254901960782" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="36"/>
@@ -148,7 +147,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="M2t-vU-ab5" customClass="SpringLabel" customModule="Um_milha_o_de_folhas" customModuleProvider="target">
-                                <rect key="frame" x="20" y="198" width="280" height="39"/>
+                                <rect key="frame" x="20" y="198" width="984" height="39"/>
                                 <color key="backgroundColor" red="0.32156862745098036" green="0.78823529411764703" blue="0.63137254901960782" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.32156862745098036" green="0.78823529411764703" blue="0.63137254901960782" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="36"/>
@@ -156,10 +155,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X4-Aa-muy">
-                                <rect key="frame" x="98.5" y="374" width="123" height="174"/>
+                                <rect key="frame" x="450.5" y="1172" width="123" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="JTI-6z-t1U"/>
-                                    <constraint firstAttribute="width" constant="123" id="WiF-uE-aNp"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="123" id="WiF-uE-aNp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="24"/>
                                 <state key="normal" title="poema aleatório">
@@ -170,7 +169,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animacaopassaro-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="wCW-QK-oHK">
-                                <rect key="frame" x="100" y="374" width="120" height="128"/>
+                                <rect key="frame" x="452" y="1172" width="120" height="128"/>
                                 <color key="backgroundColor" red="0.32156862749999998" green="0.78823529410000004" blue="0.63137254899999995" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="84j-tQ-sbl"/>
@@ -179,7 +178,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbN-qI-LXd">
-                                <rect key="frame" x="268" y="522" width="36" height="31"/>
+                                <rect key="frame" x="972" y="1320" width="36" height="31"/>
                                 <fontDescription key="fontDescription" name="Amatic-Bold" family="Amatic" pointSize="17"/>
                                 <state key="normal" title="Créditos">
                                     <color key="titleColor" red="0.35686274509999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -192,6 +191,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M2t-vU-ab5" secondAttribute="trailing" constant="20" id="0Wu-I9-RpT"/>
+                            <constraint firstItem="cbN-qI-LXd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="9Et-cU-7Ay"/>
                             <constraint firstItem="dWR-dT-zxj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="HAf-Mr-bEU"/>
                             <constraint firstAttribute="bottom" secondItem="Shg-Cb-oEj" secondAttribute="bottom" id="Jjq-ly-2hl"/>
                             <constraint firstItem="Shg-Cb-oEj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q74-8I-EYW"/>
@@ -231,7 +231,7 @@
             <objects>
                 <viewController id="0yH-wd-TjW" customClass="CreditsViewController" customModule="Um_milha_o_de_folhas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qfm-gM-oeI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RO2-XN-Vd0">
@@ -245,7 +245,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 milhão de folhas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGv-8C-40M">
-                                <rect key="frame" x="124" y="74" width="72" height="70"/>
+                                <rect key="frame" x="476" y="74" width="72" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="PNg-In-G5y"/>
                                     <constraint firstAttribute="width" constant="72" id="T2l-ez-coe"/>
@@ -255,9 +255,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sLZ-2S-BFp">
-                                <rect key="frame" x="16" y="160" width="288" height="388"/>
+                                <rect key="frame" x="16" y="160" width="992" height="1186"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">1 milhão de folhas é parte de um projeto criativo de Alex Luna chamado wabi-sabi. Os poemas deste app são gerados a partir da combinação aleatória dos haikus de um livro de meditações chamado Segredos.
+                                <string key="text">1 milhão de folhas é parte de um projeto criativo de Alex Luna chamado wabi-sabi. Os poemas deste app são gerados a partir da combinação aleatória dos haikus de um livro de meditações chamado Segredos.
 (link) 
 
 A programação em Swift também foi feita por Alex Luna.
@@ -270,7 +270,7 @@ A música se chama "5 am in Asia" e foi composta pelo artista finlandês Antii L
 https://soundcloud.com/antti-luode
 
 Algumas animações utilizam a biblioteca Spring, de MengTo.
-https://github.com/MengTo/Spring</mutableString>
+https://github.com/MengTo/Spring</string>
                                 <color key="textColor" red="0.35686274509999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -286,6 +286,7 @@ https://github.com/MengTo/Spring</mutableString>
                             <constraint firstItem="XFD-sM-TLF" firstAttribute="trailing" secondItem="sLZ-2S-BFp" secondAttribute="trailing" constant="16" id="Zwk-Oy-LhC"/>
                             <constraint firstItem="RO2-XN-Vd0" firstAttribute="top" secondItem="XFD-sM-TLF" secondAttribute="top" id="aGq-x3-mhT"/>
                             <constraint firstItem="RO2-XN-Vd0" firstAttribute="leading" secondItem="XFD-sM-TLF" secondAttribute="leading" constant="16" id="bAz-JZ-dc4"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RO2-XN-Vd0" secondAttribute="trailing" constant="20" symbolic="YES" id="jcN-qB-DPG"/>
                             <constraint firstItem="sLZ-2S-BFp" firstAttribute="top" secondItem="FGv-8C-40M" secondAttribute="bottom" constant="16" id="q0V-fj-opt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XFD-sM-TLF"/>
@@ -304,6 +305,6 @@ https://github.com/MengTo/Spring</mutableString>
         <image name="photo1.JPG" width="1000" height="666"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yMu-L4-F0b"/>
+        <segue reference="rNb-38-RVi"/>
     </inferredMetricsTieBreakers>
 </document>

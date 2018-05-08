@@ -22,6 +22,12 @@ extension UIView {
             self.alpha = 0.0
         }, completion: nil)
     }
+    
+    func leafFall() {
+        UIView.animate(withDuration: TimeInterval(Int(arc4random_uniform(20))), delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            self.frame.origin.y = UIScreen.main.bounds.height+100
+        }, completion: {finished in self.removeFromSuperview()})
+    }
 }
 
 extension String {
