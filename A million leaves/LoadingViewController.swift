@@ -30,6 +30,7 @@ class LoadingViewController: UIViewController {
         animatedLogo.animationImages = imageListArray
         animatedLogo.animationDuration = 0.8
         animatedLogo.startAnimating()
+        animatedLogo.alpha = 1
     }
     
     func setGradientBackground() {
