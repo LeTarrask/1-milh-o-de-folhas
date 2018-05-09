@@ -257,17 +257,20 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sLZ-2S-BFp">
                                 <rect key="frame" x="16" y="160" width="382" height="556"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">1 milhão de folhas é parte de um projeto criativo de Alex Luna chamado wabi-sabi. Os poemas deste app são gerados a partir da combinação aleatória dos haikus de um livro de meditações chamado Segredos.
-(link) 
+                                <mutableString key="text">1 milhão de folhas é parte de um projeto criativo de Alex Luna chamado wabisabi. Os poemas deste app são gerados a partir da combinação aleatória dos haikus de um livro de meditações chamado Segredos.
+www.tarrask.com/portfolio/segredos
 
 A programação em Swift também foi feita por Alex Luna.
-www.tarrask.com/1milhaodefolhas
+https://github.com/LeTarrask/1-milh-o-de-folhas
 
 A direção de arte, o logo e o carinho com as imagens são obras de Cris Santos.
 www.cristinasantos.eu
 
 A música se chama "5 am in Asia" e foi composta pelo artista finlandês Antii Luode.
 https://soundcloud.com/antti-luode
+
+Para a execução do som, utiliza a biblioteca SwiftySound, de Adam Cichy.
+https://github.com/adamcichy/SwiftySound
 
 Algumas animações utilizam a biblioteca Spring, de MengTo.
 https://github.com/MengTo/Spring</mutableString>
