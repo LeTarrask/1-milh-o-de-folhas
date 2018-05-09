@@ -98,7 +98,6 @@
 		79B93319207F98C0005114B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B93318207F98C0005114B1 /* AppDelegate.swift */; };
 		79B9331B207F98C0005114B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9331A207F98C0005114B1 /* MainViewController.swift */; };
 		79B9331E207F98C0005114B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B9331C207F98C0005114B1 /* Main.storyboard */; };
-		79B93323207F98C0005114B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B93321207F98C0005114B1 /* LaunchScreen.storyboard */; };
 		79B9332B207F98D6005114B1 /* LeaveMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9332A207F98D6005114B1 /* LeaveMachine.swift */; };
 		79FA3E74209CAB58006C0A2F /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FA3E73209CAB58006C0A2F /* CreditsViewController.swift */; };
 		79FA3EB3209CB671006C0A2F /* folha3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FA3E77209CB636006C0A2F /* folha3@2x.png */; };
@@ -257,7 +256,6 @@
 		79B93318207F98C0005114B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79B9331A207F98C0005114B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		79B9331D207F98C0005114B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		79B93322207F98C0005114B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79B93324207F98C0005114B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79B9332A207F98D6005114B1 /* LeaveMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveMachine.swift; sourceTree = "<group>"; };
 		79FA3E73209CAB58006C0A2F /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
@@ -495,7 +493,6 @@
 				79B9331C207F98C0005114B1 /* Main.storyboard */,
 				79FA3E73209CAB58006C0A2F /* CreditsViewController.swift */,
 				79B9332A207F98D6005114B1 /* LeaveMachine.swift */,
-				79B93321207F98C0005114B1 /* LaunchScreen.storyboard */,
 				79B93324207F98C0005114B1 /* Info.plist */,
 				79257A112097567100B23C8D /* Assets.xcassets */,
 				7971587A20875ED200032B2C /* Spring */,
@@ -613,7 +610,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 79B9330C207F98C0005114B1;
@@ -678,7 +674,6 @@
 				79FA3EBA209CB671006C0A2F /* folha1@3x.png in Resources */,
 				79FA3ECB209CB671006C0A2F /* folha1.png in Resources */,
 				793FB9AD2086087700121E5B /* photo48.JPG in Resources */,
-				79B93323207F98C0005114B1 /* LaunchScreen.storyboard in Resources */,
 				793FB9CF2086087800121E5B /* photo4.JPG in Resources */,
 				793FB9BF2086087800121E5B /* photo23.JPG in Resources */,
 				793FB9D22086087800121E5B /* photo42.JPG in Resources */,
@@ -825,14 +820,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		79B93321207F98C0005114B1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79B93322207F98C0005114B1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -958,6 +945,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "A million leaves/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Garagem-Infinita.A-million-leaves";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -977,6 +965,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "A million leaves/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Garagem-Infinita.A-million-leaves";
 				PRODUCT_NAME = "$(TARGET_NAME)";
