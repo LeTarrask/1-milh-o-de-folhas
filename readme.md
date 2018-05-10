@@ -16,7 +16,7 @@ It runs on Swift 4.0 and was made with Xcode 9.3.
 
 ## Authors
 
-* **Alex Luna** - *Original book and code* - [Projct website](http://www.tarrask.com/portfolio/segredos)
+* **Alex Luna** - *Original book and code* - [Project website](http://www.tarrask.com/portfolio/segredos)
 
 * **Cris Santos** - *Design* - [Website](http://www.cristinasantos.eu)
 

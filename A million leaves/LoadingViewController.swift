@@ -48,7 +48,6 @@ class LoadingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setGradientBackground()
         
         var folhas = [String]()
         for n in 1...20 {
@@ -87,6 +86,10 @@ class LoadingViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 15.0) {
             self.performSegue(withIdentifier: "segue", sender: self)
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        setGradientBackground()
     }
 
     override func didReceiveMemoryWarning() {
