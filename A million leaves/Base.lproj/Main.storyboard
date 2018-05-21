@@ -257,7 +257,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sLZ-2S-BFp">
                                 <rect key="frame" x="16" y="160" width="382" height="556"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">1 milhão de folhas é parte de um projeto criativo de Alex Luna chamado wabisabi. Os poemas deste app são gerados a partir da combinação aleatória dos haikus de um livro de meditações chamado Segredos.
+                                <string key="text">1 milhão de folhas é parte de um projeto criativo de Alex Luna chamado wabisabi. Os poemas deste app são gerados a partir da combinação aleatória dos haikus de um livro de meditações chamado Segredos.
 www.tarrask.com/portfolio/segredos
 
 A programação em Swift também foi feita por Alex Luna.
@@ -273,7 +273,7 @@ Para a execução do som, utiliza a biblioteca SwiftySound, de Adam Cichy.
 https://github.com/adamcichy/SwiftySound
 
 Algumas animações utilizam a biblioteca Spring, de MengTo.
-https://github.com/MengTo/Spring</mutableString>
+https://github.com/MengTo/Spring</string>
                                 <color key="textColor" red="0.35686274509999999" green="0.75294117650000003" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -308,6 +308,6 @@ https://github.com/MengTo/Spring</mutableString>
         <image name="photo1.JPG" width="1000" height="666"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yMu-L4-F0b"/>
+        <segue reference="rNb-38-RVi"/>
     </inferredMetricsTieBreakers>
 </document>
